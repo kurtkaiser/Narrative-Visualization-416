@@ -137,6 +137,7 @@ function generateBarchart(barchartId) {
                 })
                 .attr("r", function(d) {
                 return d3.sum([4,4]);
+
             });
         }
         chart.update = update;

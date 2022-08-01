@@ -129,6 +129,21 @@ function generateBarchart(barchartId) {
                 .attr("height", function(d) {
                     return yBand(0) - yBand(d.amount);
                 });
+
+
+            svg.append("g").html("<g class=\"annotation\"><g>" +
+                "<g class=\"annotation callout  \" transform=\"translate(900, 215)\"><g >" +
+                "<path class=\"connector\" d=\"M0,0L0,-80\" stroke=\"black\" fill=\"none\"" +
+                " style=\"stroke-dasharray: 3, 3;\"></path><path " +
+                "d=\"M2.6-16,-4.25A4.25,4.25,0,1,1,-2.6-16,4.25A4.25,4.25,0,1,1,2.6-16," +
+                "-4.25Z\" transform=\"translate(0, 0)\" fill=\"black\" stroke=\"black\"></path></g>" +
+                "<g ></g><g transform=\"translate(0, -80)\"><g  transform=\"translate(-112.0, -80.3)\">" +
+                "<rect width=\"112.0\" height=\"77.3\" x=\"0\" y=\"0\"fill=\"white\" fill-opacity=\"0\"></rect><text dx=\"0\" " +
+                "y=\"20.4\" fill=\"black\"><tspan x=\"0\" dy=\"0.8em\">Men: 59.3%</tspan><tspan x=\"0\" " +
+                "dy=\"1.2em\">number of</tspan><tspan x=\"0\" dy=\"1.2em\">Women: 63%</tspan></text><text " +
+                "fill=\"black\" font-weight=\"bold\"><tspan x=\"0\" dy=\"0.8em\">Record Turnout" +
+                "</tspan></text></g><path class=\"note-line\" d=\"M-112.0,0L0,0\" stroke=\"black\"></path></g>" +
+                "</g></g></g>");
         }
         if(curr == "Male"){
             curr = "Female";

@@ -66,7 +66,7 @@ function generateBarchart(barchartId) {
                 if (f.group === group){
                     if(presidentElection && f.year % 4 == 0){
                         return true;
-                    } else if(!presidentElection && f.year % 4 == 2) {
+                    } else if(!presidentElection && !(f.year % 4 ==0) ) {
                         color = "crimson";
                         return true;
                     }
@@ -114,6 +114,8 @@ function generateBarchart(barchartId) {
                     .style("opacity", .9)
             };
 
+
+
             var hideTooltip = function(d) {
                 tooltip.transition()
                     .duration(1000) // ms
@@ -140,6 +142,18 @@ function generateBarchart(barchartId) {
                 .attr("height", function(d) {
                     return yBand(0) - yBand(d.amount);
                 });
+            svg.append("g")
+                .html("<g class=\"annotation\"><g><g " +
+                    "transform=\"translate(232, 490)\"><g ><path " +
+                    "d=\"M0,0L200,-150\" stroke=\"black\" fill=\"none\" style=\"stroke-dasharray: 2, 2;\"></path> <path" +
+                    " class=\"dot\" d=\"M5.0e-16," +"-8.5A8.5,8.5,0,1,1,-5.2e-16," + "8.5A8.5,8.5,0,1,1,5.2e-16," +
+                    "-8.5\" transform=\"translate(0, 0)\" fill=\"yellow\" stroke=\"black\"></path>" +
+                    "</g><g></g><g transform=\"translate(200, -150)\"><g transform=\"translate(0, -80.3)\">" +
+                    "<rect width=\"110\" height=\"77.3\" x=\"0\" y=\"0\"fill=\"white\" fill-opacity=\"0\"></rect><text dx=\"0\" " +
+                    "y=\"20.3671875\" fill=\"black\"><tspan x=\"0\" dy=\"0.8em\">The late 1980s marked the start of a </tspan><tspan x=\"0\" " +
+                    "dy=\"1.2em\">sparatic deline in voter particpation.</tspan><tspan x=\"0\" dy=\"1.2em\"></tspan></text><text " +
+                    "fill=\"black\" font-weight=\"bold\"><tspan x=\"0\"dy=\"0.8em\">Sharp Decline</tspan></text></g><path d=\"M0,0L112.078125,0\" " +
+                    "stroke=\"black\"></path></g></g></g></g>");
         }
         chart.update = update;
     }
