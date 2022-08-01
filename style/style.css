@@ -1,0 +1,127 @@
+body {
+    display: block;
+    font-size: 18px;
+    font-family: "Verdana";
+}
+
+.content {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    text-align: center!important;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2d2d2d;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-bottom: 2rem;
+
+}
+
+.nav-btn {
+    float: left;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #6c717c;
+}
+
+.active {
+    background-color: #4863A0;
+}
+
+.page-detail {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.footer {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}
+
+.page-btn {
+    background:    #4863a0;
+    border-radius: 10px;
+    padding:       10px 25px;
+    margin: 1rem;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 14px/1 "Verdana", sans-serif;
+    text-align:    center;
+}
+
+.dropdown {
+    background:    #6c717c;
+    border-radius: 5px;
+    padding:       12px 40px;
+    margin:        1rem;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 14px/1 "Verdana", sans-serif;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex: 66%;
+
+}
+.sideColumn {
+    flex: 12%;
+}
+
+.bufferColumn {
+    flex: 2%;
+}
+
+.circle {
+    opacity: 0.5!important;
+}
+

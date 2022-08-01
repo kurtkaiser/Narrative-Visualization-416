@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Voting Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="style/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/barchart.js"></script>
+</head>
+
+<body>
+<nav class="navbar">
+    <ul class="nav">
+        <li class="nav-btn"><a class="nav-link" href="index.html">Presidential</a></li>
+        <li class="nav-btn"><a class="nav-link active" href="offYear.html">Off-Year</a></li>
+        <li class="nav-btn"><a class="nav-link" href="scatterplot.html">Scatterplot</a></li>
+        <li class="nav-btn"><a class="nav-link" href="gender.html">Gender</a></li>
+    </ul>
+</nav>
+
+
+<div class="container padBottom" id="" >
+    <div class="container">
+        <div class="columns">
+            <div class="sideColumn">
+                <a href="index.html">
+                    <button type="button" class="btn page-btn"> Previous </button>
+                </a>
+            </div>
+            <div class="bufferColumn"></div>
+            <div class="column">
+                <h2>Voting Participation by Race In Off-Year Elections</h2>
+                    <p>
+                        Increased accessibility to voting, such as voting by mail, is one reason we have seen a recent resize in election participation. However, it is not the only reason.
+                        Prior to the COVID-19 pandemic voter turnout saw a dramatic increase in the congressional elections of 2018.
+                    </p>
+                    <p>
+                        According to Jordan Misra, a Census.gov reporter, dramatic increases were noticeable particularly for younger voters and for people of color. These groups tend to vote Democratic. It appears that Democratic voters were motivated in part by their strong disapproval of President Trump. William H. Frey at Brookings Institute states that he noticed, “extraordinarily high levels of voter turnout among voting blocs that lean Democratic.” Motivation can have as dramatic of an impact on voter turnout as increased accessibility does.
+                    </p>
+                <a href=”https://www.brookings.edu/research/2018-voter-turnout-rose-dramatically-for-groups-favoring-democrats-census-confirms/
+”>Brookings Institute Article</a>
+
+                <a href=”https://www.census.gov/library/stories/2019/04/behind-2018-united-states-midterm-election-turnout.html”>Census.gov Article</a>
+
+            </div>
+            <div class="bufferColumn"></div>
+            <div class="sideColumn">
+                <a href="scatterplot.html">
+                    <button type="button" class="btn page-btn"> Continue </button>
+                </a>
+            </div>
+        </div>
+        <div id="barchart-element">
+            <select id="group-selection" class="dropdown">
+                <option selected value="All Citizens">All Citizens</option>
+            </select>
+            <span id="tooltip" class="tooltip">
+          </span><br>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer center">
+    <h6>Kurt Kaiser</h6>
+</footer>
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<script src="script/barchart.js"></script>
+</body>
+
+</html>

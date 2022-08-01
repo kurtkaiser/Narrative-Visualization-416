@@ -1,43 +1,73 @@
-<html>
+<!doctype html>
+<html lang="en">
 
-<script src='https://d3js.org/d3.v5.min.js'></script>
-<link rel="stylesheet" href="style.css">
-
-<style>
-    rect {
-        fill: lightblue;
-        stroke: black;
-    }
-
-</style>
+<head>
+    <title>Voting Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="style/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/barchart.js"></script>
+</head>
 
 <body>
+<nav class="navbar">
+    <ul class="nav">
+        <li class="nav-btn"><a class="nav-link active" href="index.html">Presidential</a></li>
+        <li class="nav-btn"><a class="nav-link" href="offYear.html">Off-Year</a></li>
+        <li class="nav-btn"><a class="nav-link" href="scatterplot.html">Scatterplot</a></li>
+        <li class="nav-btn"><a class="nav-link" href="gender.html">Gender</a></li>
+    </ul>
+</nav>
 
-<ul class="nav">
-    <li class="nav-btn"><a class="active nav-link" href="#home">Home</a></li>
-    <li class="nav-btn"><a class="nav-link" href="#more">More</a></li>
-    <li class="nav-btn"><a class="nav-link" href="#hello">Hello</a></li>
-</ul>
-<section class="content">
-
-    <div>
-
-<svg width=300 height=300></svg>
-<script src="main.js"></script>
+<div class="container" id="presidentialElections">
+    <div class="container">
+        <div class="columns">
+            <div class="sideColumn">
+                <a href="gender.html">
+                    <button type="button" class="btn page-btn"> Previous </button>
+                </a>
+            </div>
+            <div class="bufferColumn"></div>
+            <div class="column">
+                <h2>Voting Participation by Race In U.S. Presidential Elections</h2>
+                    <p>
+                        Elections have consequences, tangible consequences on the lives of all American. For nearly
+                        forty years election participation had steadily declined. Recently we have seen a reversal of
+                        this trend. One reason for this reverse is the recent surge in states that allow voters to submit
+                        their ballots by mail. This change was supported out of necessity, wanting to allow citizens to participate
+                        in elections while keeping the community at large safe. The U.S. Censor
+                        <a href="https://www.census.gov/library/stories/2021/04/what-methods-did-people-use-to-vote-in-2020-election.html#:~:text=other%20data%20sources.-,In%20the%202020%20election%2C%2069%25%20of%20voters%20nationwide%20cast%20their,been%20included%20in%20the%20survey.
+e increased accessibility
+">reported</a> record setting voter turnout in many locations as a result of these changes.
+                    </p>
+                    <p>
+                        The surge in participation happens throughout the population, present in all the various racial and ethnic groups.
+                    </p>
+            </div>
+            <div class="bufferColumn"></div>
+            <div class="sideColumn">
+                <a href="offYear.html">
+                    <button type="button" class="btn page-btn"> Continue </button>
+                </a>
+            </div>
+        </div>
+        <div id="barchart-element">
+            <select id="group-selection" class="dropdown">
+                <option selected value="All Citizens">All Citizens</option>
+            </select>
+            <span id="tooltip" class="tooltip">
+          </span><br>
+        </div>
     </div>
+</div>
 
-    <div>
-        <h1 id="title"> Hello world!</h1>
-
-    </div>
-</section>
-
-    <footer class="footer center">
-        <h6> Hello Footer</h6>
-    </footer>
-
-
-
+</div>
+<footer class="footer center">
+    <h6>Kurt Kaiser</h6>
+</footer>
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<script src="script/barchart.js"></script>
 </body>
 
 </html>

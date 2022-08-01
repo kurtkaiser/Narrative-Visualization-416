@@ -28,6 +28,8 @@ var yAxisScale = d3.scaleLinear()
 var xAxis = d3.axisBottom().scale(xScale);
 var yAxis = d3.axisLeft().scale(yAxisScale);
 
+
+
 gYAxis.call(yAxis);
 
 xYAxis.call(xAxis);

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Voting Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="style/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/barchart.js"></script>
+</head>
+
+<body>
+<nav class="navbar">
+    <ul class="nav">
+        <li class="nav-btn"><a class="nav-link" href="index.html">Presidential</a></li>
+        <li class="nav-btn"><a class="nav-link" href="offYear.html">Off-Year</a></li>
+        <li class="nav-btn"><a class="nav-link" href="scatterplot.html">Scatterplot</a></li>
+        <li class="nav-btn"><a class="nav-link active" href="gender.html">Gender</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="container">
+        <div class="columns">
+            <div class="sideColumn">
+                <a href="scatterplot.html">
+                    <button type="button" class="btn page-btn"> Previous </button>
+                </a>
+            </div>
+            <div class="bufferColumn"></div>
+            <div class="column">
+                <h2>Voting Participation by Race</h2>
+                    <p>
+                        As a result of the recent Supreme Court overturning Roe v. Wade, some have projected that there will be a dramatic increase in female voter participation. Women have long outpaced men in terms of election participation. A trend that is now projected to wide with the potential catalyst of the Supreme Court ruling.
+                    </p>
+                    <p>
+                        The top chart shows male voting data, the bottom chart shows female voting participation. Hover on the bars to view more detailed information.
+                    </p>
+            </div>
+            <div class="bufferColumn"></div>
+            <div class="sideColumn">
+                <a href="index.html">
+                    <button type="button" class="btn page-btn"> Continue </button>
+                </a>
+            </div>
+        </div>
+        <div id="barchart-element">
+            <span id="group-selection">
+            </span>
+            <span id="tooltip" class="tooltip">
+          </span><br>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer center">
+    <h6>Kurt Kaiser</h6>
+</footer>
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<script src="script/gender.js"></script>
+</body>
+
+</html>
