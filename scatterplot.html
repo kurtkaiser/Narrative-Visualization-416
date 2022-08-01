@@ -22,19 +22,22 @@
     <div class="container">
         <div class="columns">
             <div class="sideColumn">
-                <a href="index.html">
+                <a href="offYear.html">
                     <button type="button" class="btn page-btn"> Previous </button>
                 </a>
             </div>
             <div class="bufferColumn"></div>
             <div class="column">
-                <h2>Plot HTML</h2>
+                <h2>Scatterplot</h2>
                 <p>
-                    The impact of increased accessibility to voting as a result of the COVID-19 pandemic and the higher rates of voter engagement can be seen throughout a variety of subsets of the U.S. population.
-
+                    The impact of COVID-19 accessibility measures and higher rates of voter engagement can be seen across different age groups in the U.S. population.population.
                 </p>
                 <p>
-                    Hover over the various points on the scatterplot to view more detailed information. Each group is assigned a distinct color to allow for easier interpretation.
+                    Hover over the various points on the scatterplot to view more detailed information. Each age group is assigned a distinct color to allow for easier interpretation.
+                </p>
+                <p style="font-size: 12px">
+
+                    <a href=”https://www.census.gov/data/tables/time-series/demo/voting-and-registration/voting-historical-time-series.html ”>U.S. Census Data Source</a>
                 </p>
             </div>
             <div class="bufferColumn"></div>
@@ -45,20 +48,22 @@
             </div>
         </div>
         <div id="barchart-element">
-            <span id="chart-section">
-            </span>
+          <span id="chart-section">
+          </span>
             <span id="tooltip" class="tooltip">
-            </span><br>
+          </span><br>
         </div>
     </div>
 </div>
 
 
 </div>
-<footer class="footer  center">
-    <h6>Author</h6>
+<div class="space"></div>
+<footer class="footer center">
+    <h6>By Kurt Kaiser</h6>
 </footer>
 <script src='https://d3js.org/d3.v5.min.js'></script>
 <script src="script/scatterplot.js"></script>
 </body>
+
 </html>
